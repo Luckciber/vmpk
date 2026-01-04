@@ -3,8 +3,7 @@ import Inicio from './pages/inicio/Inicio'
 import Servicios from './pages/servicios/Servicios'
 import Contacto from './pages/contacto/Contacto'
 import Footer from './pages/footer/Footer'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Navbar from './components/navbar/Navbar'
 import './App.css'
 
 function App() {
@@ -12,6 +11,7 @@ function App() {
 
   return (
     <>
+    <Navbar title="Mi Sitio Web" />
     <Inicio />
     <Servicios />
     <Contacto />
