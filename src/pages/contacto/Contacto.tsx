@@ -2,16 +2,15 @@ const Contacto: React.FC = () => {
     return(
         <div>
             <h1>Página Contacto</h1>
-            <select name="motivo" required>
-            <option value="" disabled selected>Selecciona un motivo</option>
+        <select name="motivo">
+            <option value="">Selecciona un motivo</option>
             <option value="consulta">Consulta</option>
             <option value="soporte">Soporte</option>
             <option value="ventas">Ventas</option>
             <option value="otro">Otro</option>
         </select>
-        <br>
         <input type="text" name="nombre" placeholder="Nombre O  Razon Social" required></input>
-        </br>
+ 
         
         <input type="text" name="correo" placeholder="Correo Solicitante Contacto" required></input>
 
