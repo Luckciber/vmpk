@@ -1,0 +1,108 @@
+/* CONTENEDOR PRINCIPAL */
+.main-container {
+  width: 100%;
+}
+
+/* CONTENEDOR FORMULARIO */
+.contacto-container {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+/* FILAS */
+.fila {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+/* Fila botón + mensaje */
+.fila-boton {
+  align-items: center;
+}
+
+/* COLUMNA IZQUIERDA */
+.titulo {
+  display: flex;
+  align-items: center;
+}
+
+.titulo label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #243746;
+}
+
+/* COLUMNA DERECHA */
+.campo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 6px;
+  border: none;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-bottom: 2px solid #243746;
+}
+
+/* Textarea fijo */
+.campo textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* BOTÓN */
+.btn-enviar {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #243746;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+  background-color: #1b2a35;
+}
+
+/* MENSAJE INLINE */
+.mensaje-exito-inline {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f5132;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mensaje-exito-inline.visible {
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .fila {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
